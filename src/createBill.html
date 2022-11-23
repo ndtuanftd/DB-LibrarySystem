@@ -29,7 +29,7 @@
   <div class="createBill">
     <div class="sidebar">
       <div class="top">
-        <a href="/src/addBook.html" style="text-decoration: none;">
+        <a href="/src/addBill.html" style="text-decoration: none;">
           <span class="logo">LMS</span>
         </a>
       </div>
@@ -44,29 +44,37 @@
           </a>
           <p class="title">SERVICE</p>
 
-          <a href="/src/addBook.html">
+          <!-- <a href="/src/addBill.html">
             <li>
               <span>Insert book</span>
             </li>
-          </a>
+          </a> -->
           <a href="/src/manageBook.html">
             <li>
-              <span>Manage book</span>
+              <span>
+                <i class="fas fa-book"></i>
+                Manage book
+              </span>
             </li>
           </a>
           <a href="/src/manageMember.html">
             <li>
-              <span>Manage member</span>
+              <span>
+                <i class="fas fa-users"></i>
+                Manage member</span>
             </li>
           </a>
-          <a href="/src/createBill.html">
+          <!-- <a href="/src/createBill.html">
             <li>
               <span>Create bill</span>
             </li>
-          </a>
+          </a> -->
           <a href="/src/manageBill.html">
             <li>
-              <span>Manage bill</span>
+              <span>
+                <i class="fas fa-clipboard-list"></i>
+                Manage bill
+              </span>
             </li>
           </a>
         </ul>
@@ -78,7 +86,69 @@
       <center>
         <h3 style="margin-bottom: 50px">Simple library management</h3>
       </center>
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/src/manageBill.html">Bill management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Create new bill</a>
+        </li>
+      </ul>
+      <form class="addBill-form card-body">
+        <div class="form-group row">
+          <label for="inputISBN" class="col-sm-2 col-form-label">Enter ISBN</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputISBN" name="isbn">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputTitle" class="col-sm-2 col-form-label">Enter title</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputTitle" name="title">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputAuthor" class="col-sm-2 col-form-label">Enter author</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputAuthor" name="author">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputEdition" class="col-sm-2 col-form-label">Enter edition</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputEdition" name="edition">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPublication" class="col-sm-2 col-form-label">Enter publication</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPublication" name="publication">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPrice" class="col-sm-2 col-form-label">Enter price</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputPrice" name="price">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputSubArea" class="col-sm-2 col-form-label">Enter Subject area</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputSubArea" name="subArea">
+          </div>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="forHired" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            hired?
+          </label>
+        </div>
+        <center>
 
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <input class="btn btn-primary" type="reset" value="Reset">
+        </center>
+      </form>
     </div>
   </div>
 

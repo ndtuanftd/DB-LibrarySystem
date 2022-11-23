@@ -69,6 +69,13 @@ li:hover {
   flex: 6;
 }
 
+.addBill {
+  display: flex;
+}
+
+.addBill-container {
+  flex: 6;
+}
 .mngBook {
   display: flex;
 }
