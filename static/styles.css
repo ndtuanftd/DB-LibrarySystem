@@ -54,6 +54,10 @@ li:hover {
   background-color: #ece8ff;
 }
 
+a > .active {
+  background-color: #ece8ff;
+}
+
 .sidebar > .center > ul span {
   font-size: 13px;
   font-weight: 600;
@@ -61,7 +65,14 @@ li:hover {
   margin-left: 10px;
 }
 
-.addbook {
+.addbook,
+.addBill,
+.mngBook,
+.mngMember,
+.createBill,
+.dashboard,
+.mngBill,
+.bookDetail {
   display: flex;
 }
 
@@ -69,43 +80,39 @@ li:hover {
   flex: 6;
 }
 
-.addBill {
-  display: flex;
-}
-
-.addBill-container {
-  flex: 6;
-}
-.mngBook {
-  display: flex;
-}
-
-.mngBook-container {
+.addbook-container,
+.addBill,
+.addBill-container,
+.mngBook-container,
+.mngMember-container,
+.createBill-container,
+.createBill-container,
+.mngBill-container,
+.bookDetail-container {
   flex: 6;
 }
 
-.mngMember {
+.back-btn {
+  height: 52px;
+  padding: 0 20px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 18px;
+  line-height: 28px;
+  color: #171a1fff;
+  background: #00000000;
+  opacity: 1;
+  border: none;
+  border-radius: 12px;
+  gap: 8px;
 }
 
-.mngMember-container {
-  flex: 6;
-}
-.createBill {
-  display: flex;
+.a-text-bold {
+  font-weight: 700 !important;
 }
 
-.createBill-container {
-  flex: 6;
-}
-
-.mngBill {
-  display: flex;
-}
-
-.mngBill-container {
-  flex: 6;
-}
 /* .bottom {
   display: flex;
   align-items: center;

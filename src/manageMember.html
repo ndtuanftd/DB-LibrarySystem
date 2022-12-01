@@ -36,8 +36,9 @@
       <div class="center">
         <ul>
           <p class="title">MAIN</p>
-          <a href="/">
+          <a href="./dashboard.html">
             <li>
+              <i class="fas fa-th-large"></i>
               <span>Dashboard</span>
             </li>
           </a>
@@ -57,7 +58,7 @@
             </li>
           </a>
           <a href="./manageMember.html">
-            <li>
+            <li class="active">
               <span>
                 <i class="fas fa-users"></i>
                 Manage member</span>
@@ -84,7 +85,7 @@
         <h3 style="margin-bottom: 50px">Simple library management</h3>
       </center>
       <!-- search bar -->
-      <div class="search-bar">
+      <div class="search-bar m-lg-5">
         <div class="input-group">
           <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
             placeholder="search...">
@@ -99,30 +100,35 @@
       <table class="table">
         <thead class="thead-light">
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Member's ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <th scope="row">M32139</th>
+            <td>Nguyen Van A</td>
+            <td>nva@gmail.com</td>
+            <td>0888888888</td>
+            <td><a href="./memberInfo.html" class="btn btn-primary">View details</a></td>
+          </tr>
           </tr>
           <tr>
             <th scope="row">2</th>
             <td>Jacob</td>
             <td>Thornton</td>
             <td>@fat</td>
+            <td><a href="./memberInfo.html" class="btn btn-primary">View details</a></td>
           </tr>
           <tr>
             <th scope="row">3</th>
             <td>Larry</td>
             <td>the Bird</td>
             <td>@twitter</td>
+            <td><a href="./memberInfo.html" class="btn btn-primary">View details</a></td>
           </tr>
         </tbody>
       </table>

@@ -37,8 +37,9 @@
       <div class="center">
         <ul>
           <p class="title">MAIN</p>
-          <a href="/">
+          <a href="./dashboard.html">
             <li>
+              <i class="fas fa-th-large"></i>
               <span>Dashboard</span>
             </li>
           </a>
@@ -70,7 +71,7 @@
             </li>
           </a> -->
           <a href="./manageBill.html">
-            <li>
+            <li class="active">
               <span>
                 <i class="fas fa-clipboard-list"></i>
                 Manage bill
@@ -94,7 +95,7 @@
           <a class="nav-link" href="./createBill.html">Create new bill</a>
         </li>
       </ul>
-      <div class="search-bar">
+      <div class="search-bar mt-lg-5">
         <div class="input-group">
           <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
             placeholder="search...">
@@ -106,36 +107,27 @@
         </div>
       </div>
 
-      <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- IF found, -->
+
+      <div class="mt-lg-5">
+        <table class="table mt-3">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Bill ID</th>
+              <th scope="col">Is valid</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">B123213</th>
+              <td>true</td>
+              <td><a href="./billInfo.html" class="btn btn-primary">View detail</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </div>
 

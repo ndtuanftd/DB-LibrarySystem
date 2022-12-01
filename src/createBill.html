@@ -20,6 +20,60 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script type='text/javascript'>
+    function addFields() {
+      // Generate a dynamic number of inputs
+      var number = document.getElementById("noBook").value;
+      console.log(number);
+      // Get the element where the inputs will be added to
+      var listOfBooks = document.getElementById("listOfBooks");
+      // Remove every children it had before
+      while (listOfBooks.hasChildNodes()) {
+        listOfBooks.removeChild(listOfBooks.lastChild);
+      }
+      for (i = 0; i < number; i++) {
+
+        var row = document.createElement("div");
+        row.setAttribute("class", "form-group row");
+
+        var id = "book" + (i + 1);
+        /* label */
+        var label = document.createElement("label");
+        label.setAttribute("for", id);
+        label.setAttribute("class", "col-sm-2 col-form-label");
+        label.textContent = "Book " + (i + 1);
+
+        /* input book id */
+        var bookid = document.createElement("div");
+        bookid.setAttribute("class", "col-lg-4");
+        var bookidInput = document.createElement("input");
+        bookidInput.setAttribute("class", "form-control");
+        bookidInput.type = "text";
+        bookidInput.name = id;
+        bookidInput.id = id;
+        bookidInput.placeholder = "ID";
+        bookid.appendChild(bookidInput);
+
+        /* input book due date */
+        var bookidDuedate = document.createElement("div");
+        bookidDuedate.setAttribute("class", "col-lg-3");
+        var bookidDuedateInput = document.createElement("input");
+        bookidDuedateInput.setAttribute("class", "form-control");
+        bookidDuedateInput.type = "date";
+        bookidDuedateInput.name = id;
+        bookidDuedateInput.id = id;
+        bookidDuedate.appendChild(bookidDuedateInput);
+
+
+        /*  */
+        row.appendChild(label);
+        row.appendChild(bookid);
+        row.appendChild(bookidDuedate);
+
+        listOfBooks.appendChild(row);
+      }
+    }
+  </script>
 
 </head>
 
@@ -37,8 +91,9 @@
       <div class="center">
         <ul>
           <p class="title">MAIN</p>
-          <a href="/">
+          <a href="./dashboard.html">
             <li>
+              <i class="fas fa-th-large"></i>
               <span>Dashboard</span>
             </li>
           </a>
@@ -70,7 +125,7 @@
             </li>
           </a> -->
           <a href="./manageBill.html">
-            <li>
+            <li class="active">
               <span>
                 <i class="fas fa-clipboard-list"></i>
                 Manage bill
@@ -95,57 +150,37 @@
           <a class="nav-link active" href="#">Create new bill</a>
         </li>
       </ul>
-      <form class="addBill-form card-body">
+      <form class="addBill-form card-body" action="#">
         <div class="form-group row">
-          <label for="inputISBN" class="col-sm-2 col-form-label">Enter ISBN</label>
-          <div class="col-sm-10">
+          <label for="inputISBN" class="col-sm-2 col-form-label">Enter Member ID</label>
+          <div class="col-sm-9">
             <input type="text" class="form-control" id="inputISBN" name="isbn">
           </div>
         </div>
         <div class="form-group row">
-          <label for="inputTitle" class="col-sm-2 col-form-label">Enter title</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputTitle" name="title">
+          <label for="noBook" class="col-sm-2 col-form-label">Number of books</label>
+          <div class="col-lg-8">
+            <input type="text" class="form-control" id="noBook" name="noBook" value="" placeholder="Maxium 5 books">
           </div>
+          <a href="#" class="btn btn-info col-sm-1" id="filldetails" onclick="addFields()">Confirm</a>
         </div>
-        <div class="form-group row">
-          <label for="inputAuthor" class="col-sm-2 col-form-label">Enter author</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputAuthor" name="author">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputEdition" class="col-sm-2 col-form-label">Enter edition</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEdition" name="edition">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPublication" class="col-sm-2 col-form-label">Enter publication</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPublication" name="publication">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPrice" class="col-sm-2 col-form-label">Enter price</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputPrice" name="price">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputSubArea" class="col-sm-2 col-form-label">Enter Subject area</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputSubArea" name="subArea">
-          </div>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="forHired" id="flexRadioDefault1">
-          <label class="form-check-label" for="flexRadioDefault1">
-            hired?
-          </label>
-        </div>
-        <center>
 
+        <!-- <div class="form-group row">
+          <label for="book1" class="col-sm-2 col-form-label"> Book 1</label>
+          <div class="col-lg-4">
+            <input type="text" class="form-control" id="noBook1" name="book1" value="" placeholder="ID">
+          </div>
+          <div class="col-lg-3">
+            <input type="date" class="form-control" id="book1" name="book1" value="" placeholder="Due Date">
+          </div>
+        </div> -->
+
+        <div id="listOfBooks">
+
+        </div>
+
+
+        <center>
           <button type="submit" class="btn btn-primary">Submit</button>
           <input class="btn btn-primary" type="reset" value="Reset">
         </center>
