@@ -173,162 +173,112 @@
         <div class="card">
           <div class="card-body">
             <h3>Book List</h3>
-            <div id="accordion">
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                      aria-controls="collapseOne">
-                      #1: Calculus 1
-
-                    </button>
-                  </h5>
-                </div>
-
-                <form action="" method="post">
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                      <ol>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Book ID : </span>
-                            <span>B10210203</span>
-                          </span>
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Status : </span>
-                            <span>Borrowing</span>
-                          </span>
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Overdue: </span>
-                            <span>20/11/2022</span>
-                          </span>
-
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Return date : </span>
-                            <span>20/10/2022</span>
-                          </span>
-                        </li>
-                      </ol>
-                      <a class="btn btn-info btn-sm ml-5" id="filldetails">Return</a>
-
-                      <div id="newDuedate"></div>
-                    </div>
-                  </div>
-                </form>
-
-              </div>
-
-
-              <div class="card">
-                <div class="card-header" id="headingOne">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
-                      aria-controls="collapseTwo">
-                      #1: Calculus 1
-
-                    </button>
-                  </h5>
-                </div>
-
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
-
-                  <form action="" method="post">
-                    <div class="card-body">
-                      <ol>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Book ID : </span>
-                            <span>B10210203</span>
-                          </span>
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Status : </span>
-                            <span>Borrowing</span>
-                          </span>
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Overdue date : </span>
-                            <span>20/11/2022</span>
-                          </span>
-
-
-                        </li>
-                        <li>
-                          <span class="a-list-item">
-                            <span class="a-text-bold">Return date : </span>
-                            <span>20/10/2022</span>
-                          </span>
-                        </li>
-                      </ol>
-                      <a class="btn btn-info btn-sm ml-5" id="filldetails">Return</a>
-
-                      <div id="newDuedate"></div>
-                    </div>
-                  </form>
+            <form action="" method="post">
+              <div class="container mt-3">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th class="text-center">
+                          <input type="checkbox" class="select-all checkbox" name="select-all">
+                        </th>
+                        <th colspan="2">Book ID</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Overdue date</th>
+                        <th>Return date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="text-center">
+                          <input type="checkbox" class=" select-item checkbox" name="select-item">
+                        </td>
+                        <td colspan=" 2">
+                          <h6>Bo12321321</h6>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">Calculus 2</div>
+                        </td>
+                        <td>Borrowing<br></td>
+                        <td>10/11/2022</td>
+                        <td>10/12/2022</td>
+                        <td><i class="fa fa-external-link external-link"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input type="checkbox" class=" select-item checkbox" name="select-item">
+                        </td>
+                        <td colspan=" 2">
+                          <h6>Bo12321321</h6>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">Calculus 2</div>
+                        </td>
+                        <td>Returned<br></td>
+                        <td>10/11/2022</td>
+                        <td>10/12/2022</td>
+                        <td><i class="fa fa-external-link external-link"></i></td>
+                      </tr>
+                      <tr>
+                        <td class="text-center">
+                          <input type="checkbox" class=" select-item checkbox" name="select-item">
+                        </td>
+                        <td colspan=" 2">
+                          <h6>Bo12321321</h6>
+                        </td>
+                        <td>
+                          <div class="d-flex align-items-center">Calculus 2</div>
+                        </td>
+                        <td>Borrowing<br></td>
+                        <td>10/11/2022</td>
+                        <td>10/12/2022</td>
+                        <td><i class="fa fa-external-link external-link"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                      aria-expanded="false" aria-controls="collapseTwo">
-                      Collapsible Group Item #2
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf
-                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod.
-                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                    ea
-                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
-                    denim
-                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" id="headingThree">
-                  <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                      aria-expanded="false" aria-controls="collapseThree">
-                      Collapsible Group Item #3
-                    </button>
-                  </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                  <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf
-                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod.
-                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                    ea
-                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
-                    denim
-                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
-                </div>
-              </div>
-            </div>
+              <center>
+                <button type="button" class="btn btn-outline-primary">Extend</button>
+                <button type="button" class="btn btn-outline-primary">Return</button>
+              </center>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
 </body>
+
+
+<script>
+  $(function () {
+    //column checkbox select all or cancel
+    $("input.select-all").click(function () {
+      var checked = this.checked;
+      $("input.select-item").each(function (index, item) {
+        item.checked = checked;
+      });
+    });
+
+    //check selected items
+    $("input.select-item").click(function () {
+      var checked = this.checked;
+      console.log(checked);
+      checkSelected();
+    });
+
+    //check is all selected
+    function checkSelected() {
+      var all = $("input.select-all")[0];
+      var total = $("input.select-item").length;
+      var len = $("input.select-item:checked:checked").length;
+      console.log("total:" + total);
+      console.log("len:" + len);
+      all.checked = len === total;
+    }
+  });
+</script>
 
 </html>
