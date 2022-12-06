@@ -146,6 +146,10 @@ a > .active {
   margin-bottom: 30px;
 }
 
+.billOption-form {
+  margin-left: 60px;
+}
+
 /* .bottom {
   display: flex;
   align-items: center;

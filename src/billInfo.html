@@ -246,6 +246,173 @@
             </form>
           </div>
         </div>
+        <div class="card">
+          <div class="card-body">
+            <h3>Book List</h3>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      #1: Calculus 1
+
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ol>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Book ID : </span>
+                          <span>B10210203</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Status : </span>
+                          <span>Borrowing</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Due date : </span>
+                          <span>20/11/2022</span>
+                          <a class="btn btn-info btn-sm ml-5" id="filldetails" </a>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Return date : </span>
+                          <span>20/10/2022</span>
+                        </span>
+                      </li>
+                    </ol>
+                    <form action="" class="billOption-form">
+                      <div class="row">
+                        <div class="form-check col-2">
+                          <label class="form-check-label" for="check1">
+                            <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something"
+                              checked>Lost
+                          </label>
+                        </div>
+                        <div class="form-check col-2">
+                          <label class="form-check-label" for="check2">
+                            <input type="checkbox" class="form-check-input" id="check2" name="option2"
+                              value="something">Destroy
+                          </label>
+                        </div>
+                        <div class="form-check col-2">
+                          <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input">Return
+                          </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                    </form>
+
+                    <div id="newDuedate"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true"
+                      aria-controls="collapseTwo">
+                      #1: Calculus 1
+
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ol>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Book ID : </span>
+                          <span>B10210203</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Status : </span>
+                          <span>Borrowing</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Overdue date : </span>
+                          <span>20/11/2022</span>
+                        </span>
+                      </li>
+                      <li>
+                        <span class="a-list-item">
+                          <span class="a-text-bold">Return date : </span>
+                          <span>20/10/2022</span>
+                        </span>
+                      </li>
+                    </ol>
+                    <a class="btn btn-info btn-sm ml-5" id="filldetails" onclick="addFields()">Extend due date</a>
+
+                    <div id="newDuedate"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                      aria-expanded="false" aria-controls="collapseTwo">
+                      Collapsible Group Item #2
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                      aria-expanded="false" aria-controls="collapseThree">
+                      Collapsible Group Item #3
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+                    wolf
+                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                    eiusmod.
+                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
+                    ea
+                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+                    denim
+                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
