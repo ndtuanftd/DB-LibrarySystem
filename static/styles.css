@@ -88,10 +88,29 @@ a > .active {
 .createBill-container,
 .createBill-container,
 .mngBill-container,
-.bookDetail-container {
+.bookDetail-container,
+.dashboard-container {
   flex: 6;
 }
 
+.mngBook-subcontainer,
+.mngMember-subcontainer,
+.mngBill-subcontainer {
+  margin: 0px 50px 30px 20px;
+}
+
+.mngBook-subcontainer,
+.mngBill-subcontainer > .search-bar {
+  margin-top: 20px;
+}
+
+.status-checkbox {
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 50px;
+}
 .back-btn {
   height: 52px;
   padding: 0 20px;
@@ -111,6 +130,20 @@ a > .active {
 
 .a-text-bold {
   font-weight: 700 !important;
+}
+
+.welcome {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.top5-book,
+.top5-member {
+  margin: 100px 30px 50px 70px;
+}
+.top5-book > h6,
+.top5-member > h6 {
+  margin-bottom: 30px;
 }
 
 /* .bottom {

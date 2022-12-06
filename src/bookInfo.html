@@ -67,6 +67,14 @@
               </span>
             </li>
           </a>
+          <a href="/src/">
+            <li>
+              <span>
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
+              </span>
+            </li>
+          </a>
         </ul>
       </div>
     </div> <!-- End sidebar -->
@@ -94,49 +102,118 @@
 
 
       <!-- Product detail -->
-      <div class="wrapper">
-        <h2>Book detail information</h2>
-        <div class="detailsBullet">
-          <ul>
-            <li><span class="a-list-item"><span class="a-text-bold">ISBN : </span><span>123</span></span></li>
-            <li><span class="a-list-item"><span class="a-text-bold">Title : </span><span>Calculus 2</span></span></li>
-            <li><span class="a-list-item"><span class="a-text-bold">Edition : </span><span>1</span></span></li>
-            <li><span class="a-list-item"><span class="a-text-bold">Price : </span><span>200.000</span></span></li>
-            <li><span class="a-list-item"><span class="a-text-bold">Language : </span><span>VN, USA, ENG</span></span>
-            </li>
-            <li>
-              <span class="a-list-item">
-                <span class="a-text-bold">Subject : </span>
-                <span> Chemistry, ...</span>
-              </span>
-            </li>
-            <li>
-              <span class="a-list-item">
-                <span class="a-text-bold">Author : </span>
-                <span>
-                  Nguyen Van A, fsjdfij, fdfj
-                </span>
-              </span>
-            </li>
-            <li>
-              <span class="a-list-item">
-                <span class="a-text-bold">Publication : </span>
-                <span>
-                  Nha xuat ban Ha
-                </span>
-              </span>
-            </li>
-            <li>
-              <span class="a-list-item">
-                <span class="a-text-bold">Status : </span>
-                <span>
-                  Available
-                </span>
-              </span>
-            </li>
-          </ul>
+      <div class="card">
+        <div class="card-body">
+          <div class="wrapper">
+            <h2>Book detail information</h2>
+            <div class="detailsBullet">
+              <ul>
+                <li><span class="a-list-item"><span class="a-text-bold">ISBN : </span><span>123</span></span></li>
+                <li><span class="a-list-item"><span class="a-text-bold">Title : </span><span>Calculus 2</span></span>
+                </li>
+                <li><span class="a-list-item"><span class="a-text-bold">Edition : </span><span>1</span></span></li>
+                <li><span class="a-list-item"><span class="a-text-bold">Price : </span><span>200.000</span></span></li>
+                <li><span class="a-list-item"><span class="a-text-bold">Language : </span><span>VN, USA,
+                      ENG</span></span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Subject : </span>
+                    <span> Chemistry, ...</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Author : </span>
+                    <span>
+                      Nguyen Van A, fsjdfij, fdfj
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Publication : </span>
+                    <span>
+                      Nha xuat ban Ha
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Status : </span>
+                    <span>
+                      Borrowing
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Being borrowed by : </span>
+                    <span>
+                      Nguyen Van B
+                    </span>
+                  </span>
+                </li>
+                <li>
+                  <span class="a-list-item">
+                    <span class="a-text-bold">Number of copies: </span>
+                    <span>
+                      20
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
+
+
+      <div class="card">
+        <div class="card-body">
+          <h3>
+            Borrow history
+          </h3>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Bill ID</th>
+                <th>Borrowed by</th>
+                <th>Due date</th>
+                <th>Status</th>
+
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr>
+                <td>B123233</td>
+                <td>Nguyen Van A</td>
+                <td>12/02/2022</td>
+                <td>Valid</td>
+              </tr>
+              <tr>
+                <td>B123233</td>
+                <td>Nguyen Van A</td>
+                <td>12/02/2022</td>
+                <td>Valid</td>
+              </tr>
+              <tr>
+                <td>B123233</td>
+                <td>Nguyen Van A</td>
+                <td>12/02/2022</td>
+                <td>Valid</td>
+              </tr>
+              <tr>
+                <td>B123233</td>
+                <td>Nguyen Van A</td>
+                <td>12/02/2022</td>
+                <td>Valid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
 
     </div> <!-- End container -->
   </div> <!-- End BookDetail -->

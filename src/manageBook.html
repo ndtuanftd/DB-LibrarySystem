@@ -71,11 +71,19 @@
               <span>Create bill</span>
             </li>
           </a> -->
-          <a href="/src/manageBill.html">
+          <a href="./manageBill.html">
             <li>
               <span>
                 <i class="fas fa-clipboard-list"></i>
                 Manage bill
+              </span>
+            </li>
+          </a>
+          <a href="/src/">
+            <li>
+              <span>
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
               </span>
             </li>
           </a>
@@ -96,44 +104,70 @@
           <a class="nav-link" href="./addBook.html">Insertion</a>
         </li>
       </ul>
-      <div class="search-bar mt-lg-5">
-        <div class="input-group">
-          <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
-            placeholder="search...">
-          <span class="input-group-append">
-            <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3" type="button">
-              <i class="fa fa-search"></i>
-            </button>
-          </span>
+
+      <div class="mngBook-subcontainer">
+        <!-- Search bar -->
+        <div class="search-bar mt-lg-5">
+          <div class="input-group">
+            <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
+              placeholder="search...">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
         </div>
+
+
+
+        <!--  checkbox filter -->
+        <div class="row status-checkbox">
+          <p class="col-2">Status</p>
+          <div class="book-group-checkbox col">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Borrowing </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+              <label class="form-check-label" for="flexCheckDefault">Avaiable </label>
+            </div>
+          </div>
+        </div>
+
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">ISBN</th>
+              <th scope="col">Title</th>
+              <th scope="col">Status</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">123</th>
+              <td>Calculus</td>
+              <td>Avaiable</td>
+              <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
+            </tr>
+            <tr>
+              <th scope="row">124</th>
+              <td>Linear Algebra</td>
+              <td>Borrrowing</td>
+              <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
+            </tr>
+            <tr>
+              <th scope="row">125</th>
+              <td>Statistics</td>
+              <td>In Library</td>
+              <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-      <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">ISBN</th>
-            <th scope="col">Title</th>
-            <th scope="col"></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">123</th>
-            <td>Calculus</td>
-            <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
-          </tr>
-          <tr>
-            <th scope="row">124</th>
-            <td>Linear Algebra</td>
-            <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
-          </tr>
-          <tr>
-            <th scope="row">125</th>
-            <td>Statistics</td>
-            <td><a href="./bookInfo.html" class="btn btn-primary">View details</a></td>
-          </tr>
-        </tbody>
-      </table>
     </div>
   </div>
 

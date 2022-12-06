@@ -78,6 +78,14 @@
               </span>
             </li>
           </a>
+          <a href="/src/">
+            <li>
+              <span>
+                <i class="fas fa-sign-out-alt"></i>
+                Log out
+              </span>
+            </li>
+          </a>
         </ul>
       </div>
     </div>
@@ -95,37 +103,41 @@
           <a class="nav-link" href="./createBill.html">Create new bill</a>
         </li>
       </ul>
-      <div class="search-bar mt-lg-5">
-        <div class="input-group">
-          <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
-            placeholder="search...">
-          <span class="input-group-append">
-            <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3" type="button">
-              <i class="fa fa-search"></i>
-            </button>
-          </span>
+
+
+      <div class="mngBill-subcontainer">
+        <div class="search-bar mt-lg-5">
+          <div class="input-group">
+            <input class="form-control border-end-0 border rounded-pill" type="text" id="example-search-input"
+              placeholder="search...">
+            <span class="input-group-append">
+              <button class="btn btn-outline-secondary bg-white border-start-0 border rounded-pill ms-n3" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
         </div>
-      </div>
 
-      <!-- IF found, -->
+        <!-- IF found, -->
 
-      <div class="mt-lg-5">
-        <table class="table mt-3">
-          <thead class="thead-light">
-            <tr>
-              <th scope="col">Bill ID</th>
-              <th scope="col">Is valid</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">B123213</th>
-              <td>true</td>
-              <td><a href="./billInfo.html" class="btn btn-primary">View detail</a></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="mt-lg-5">
+          <table class="table mt-3">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Bill ID</th>
+                <th scope="col">Is valid</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">B123213</th>
+                <td>true</td>
+                <td><a href="./billInfo.html" class="btn btn-primary">View detail</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
     </div>
